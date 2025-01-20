@@ -1,13 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import AppBar from "./components/AppBar";
+import ProjectCards from "./components/ProjectCards";
+import reportWebVitals from "./components/reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("base"));
 root.render(
   <React.StrictMode>
-    <App />
+    <AppBar />
+    <ProjectCards />
+    <ProjectCards />
+    <ProjectCards />
+    <ProjectCards />
   </React.StrictMode>
 );
 
