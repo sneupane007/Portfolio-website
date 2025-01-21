@@ -1,17 +1,19 @@
 import React from "react";
+import "./components/App.css";
 import ReactDOM from "react-dom/client";
 import AppBar from "./components/AppBar";
-import ProjectCards from "./components/ProjectCards";
 import reportWebVitals from "./components/reportWebVitals";
+import ViewProjects from "./components/ViewProjects";
 
 const root = ReactDOM.createRoot(document.getElementById("base"));
 root.render(
   <React.StrictMode>
-    <AppBar />
-    <ProjectCards />
-    <ProjectCards />
-    <ProjectCards />
-    <ProjectCards />
+    <div className="p-6">
+      <AppBar />
+    </div>
+    <div className="p-6">
+      <ViewProjects />
+    </div>
   </React.StrictMode>
 );
 
